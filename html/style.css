@@ -1,0 +1,17 @@
+:root {
+  --brandColor-1: rgba(116, 44, 233, 0.797);
+  --brandTextColor: rgb(236, 240, 239);
+}
+
+.brandBg {
+  background-color: var(--brandColor-1);
+  border-radius: 5px;
+}
+
+.brandText {
+  color: var(--brandTextColor);
+}
+
+.services {
+  min-height: vh60;
+}

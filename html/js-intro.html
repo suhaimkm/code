@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAvaScript Intro</title>
+  </head>
+  <script>
+    function changeColor() {
+      var pageHeading = document.getElementById("pageHeading");
+      pageHeading.style.color == "cyan"
+        ? (pageHeading.style.color = "black")
+        : (pageHeading.style.color = "cyan");
+    }
+    function changeFontSize() {
+      var para = document.getElementById("para");
+      if (para.style.fontSize == "32px") {
+        para.style.fontSize = "16px";
+      } else {
+        para.style.fontSize = "32px";
+      }
+      para.style.marginBottom = "20px";
+      para.innerHTML = Date();
+    }
+
+    function changeBg() {
+      var body = document.body;
+      body.style.backgroundColor == "chocolate"
+        ? (body.style.backgroundColor = "white")
+        : (body.style.backgroundColor = "chocolate");
+    }
+  </script>
+  <body>
+    <h1 id="pageHeading">JAvaScript Introduction</h1>
+    <p id="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut odit ab
+      blanditiis veniam iusto illo, rerum officia eveniet iure sed aliquid
+      reprehenderit laborum repellat provident voluptatum. Excepturi quis
+      ratione necessitatibus.
+    </p>
+
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeFontSize()">Change Font size</button>
+    <button onclick="changeBg()">change Background</button>
+  </body>
+</html>

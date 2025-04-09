@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox basics</title>
+    <style>
+      .container {
+        height: 300px;
+        background-color: azure;
+        border: 2px solid sandybrown;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .items {
+        height: 100px;
+        width: 100px;
+        background-color: burlywood;
+        border: 1px dashed seagreen;
+      }
+      .item1 {
+        flex: 0 1 200px;
+        background-color: chocolate;
+      }
+      .item2 {
+        flex: 1 2 200px;
+      }
+      .item3 {
+        flex: 3 3 100px;
+        background-color: rgb(86, 54, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items item1"></div>
+      <div class="items item2"></div>
+      <div class="items item3"></div>
+    </div>
+  </body>
+</html>
